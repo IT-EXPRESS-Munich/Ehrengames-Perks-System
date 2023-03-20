@@ -1,8 +1,8 @@
 name: Ehrengames-Perks
 version: '${project.version}'
-main: tech.itexpress.perks.Ehrengames_Perks
+main: tech.itexpress.perks.loader
 api-version: 1.19
-author: Ihr Name
+author: Lukas Richter
 description: Ein Plugin für Ehrengames, das ein Perks-System hinzufügt.
 
 commands:
