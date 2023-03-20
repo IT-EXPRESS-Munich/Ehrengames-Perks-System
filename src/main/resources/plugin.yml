@@ -1,0 +1,12 @@
+name: Ehrengames-Perks
+version: '${project.version}'
+main: tech.itexpress.perks.Ehrengames_Perks
+api-version: 1.19
+author: Ihr Name
+description: Ein Plugin für Ehrengames, das ein Perks-System hinzufügt.
+
+commands:
+  perks:
+    description: Zeigt alle verfügbaren Perks an.
+    usage: /perks
+
