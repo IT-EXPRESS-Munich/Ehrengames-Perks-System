@@ -5,17 +5,18 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
-import org.bukkit.plugin.java.JavaPlugin;
 
-public class Glow extends JavaPlugin implements Listener {
+public class Glow implements Listener {
 
-    public void onEnable() {
-        getServer().getPluginManager().registerEvents(this, this);
-        // Plugin aktivieren
-    }
+    private static Glow instance;
 
-    public void onDisable() {
-        // Plugin deaktivieren
+    private Glow() {}
+
+    public static Glow getInstance() {
+        if (instance == null) {
+            instance = new Glow();
+        }
+        return instance;
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
