@@ -6,7 +6,7 @@ author: Lukas Richter
 description: Ein Plugin für Ehrengames, das ein Perks-System hinzufügt.
 
 commands:
-  glow:
+  perks:
     description: Zeigt alle verfügbaren Perks an.
 
 
