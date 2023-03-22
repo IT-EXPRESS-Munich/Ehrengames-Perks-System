@@ -1,4 +1,4 @@
-package tech.itexpress.perks.Perks;
+package tech.itexpress.perkssystem.perks;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -6,32 +6,11 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
-import tech.itexpress.perks.GUI.PerksGUI;
+import tech.itexpress.perkssystem.gui.PerksGUI;
 
-public class Perks extends JavaPlugin implements Listener, CommandExecutor {
+public class Perks implements CommandExecutor {
 
-    private static Perks instance;
     private PerksGUI perksGUI;
-
-    private Perks() {}
-
-    public static Perks getInstance() {
-        if (instance == null) {
-            instance = new Perks();
-        }
-        return instance;
-    }
-
-    public void onEnable() {
-        // Plugin aktivieren
-        perksGUI = new PerksGUI();
-        getServer().getPluginManager().registerEvents(perksGUI, this);
-        this.getCommand("perks").setExecutor(this);
-    }
-
-    public void onDisable() {
-        // Plugin deaktivieren
-    }
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
