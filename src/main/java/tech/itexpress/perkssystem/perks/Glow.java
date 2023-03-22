@@ -1,4 +1,4 @@
-package tech.itexpress.perks.Perks;
+package tech.itexpress.perkssystem.perks;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -7,26 +7,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 
-public class Glow implements Listener, CommandExecutor {
-
-    private static Glow instance;
-
-    private Glow() {}
-
-    public static Glow getInstance() {
-        if (instance == null) {
-            instance = new Glow();
-        }
-        return instance;
-    }
-
-    public void onEnable() {
-        // Plugin aktivieren
-    }
-
-    public void onDisable() {
-        // Plugin deaktivieren
-    }
+public class Glow implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {

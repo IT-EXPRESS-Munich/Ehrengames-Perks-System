@@ -1,4 +1,4 @@
-package tech.itexpress.perks.GUI;
+package tech.itexpress.perkssystem.gui;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
